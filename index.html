@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0A0A0A">
+
+<!-- ══════════ SEO ══════════ -->
+<title>JLB Chef Gaucho | Argentine Live-Fire Experiences Miami</title>
+<meta name="description" content="Argentine live-fire experiences by Chef José Luis Bolchini. Private events, weddings and corporate celebrations built around fire, grill and Argentine tradition in Miami. Book on WhatsApp.">
+<meta name="author" content="JLB Chef Gaucho">
+<link rel="canonical" href="https://jlbchefgaucho.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="JLB Chef Gaucho">
+<meta property="og:title" content="JLB Chef Gaucho | Argentine Live-Fire Experiences Miami">
+<meta property="og:description" content="It All Begins with Fire. Argentine live-fire experiences for private events, weddings and celebrations in Miami.">
+<meta property="og:url" content="https://jlbchefgaucho.com/">
+<meta property="og:image" content="https://jlbchefgaucho.com/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="JLB Chef Gaucho | Argentine Live-Fire Experiences Miami">
+<meta name="twitter:description" content="It All Begins with Fire. Argentine live-fire experiences for private events, weddings and celebrations in Miami.">
+<meta name="twitter:image" content="https://jlbchefgaucho.com/assets/img/og-image.jpg">
+
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- Fondo fijo: se queda anclado a la pantalla mientras se hace scroll,
+     en vez de cambiar de color sólido sección por sección. -->
+<div class="ambience" aria-hidden="true">
+  <span class="ambience__grain"></span>
+  <canvas class="ambience__embers" id="ambienceEmbers"></canvas>
+</div>
+<a class="skip-link" href="#hero">Skip to content</a>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- ═══════════════════════════════════════════════════════
+     NAV
+     ═══════════════════════════════════════════════════════ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="nav__brand" href="#top" aria-label="JLB Chef Gaucho — home">
+      <img src="assets/img/brand-icon.png" alt="" class="nav__mark" width="200" height="315">
+      <span class="nav__name">JLB <em>Chef Gaucho</em></span>
+    </a>
+
+    <nav class="nav__links" id="navLinks" aria-label="Main navigation">
+      <a href="#chef">The chef</a>
+      <a href="#experience">The experience</a>
+      <a href="#menu">Menu</a>
+      <a href="#services">Events</a>
+      <a class="btn btn--sm btn--primary" href="#book">Book</a>
+    </nav>
+
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ═══════════════════════════════════════════════════════
+       1. HERO — placa central: el video queda en el eje de la
+          pantalla, con el título partido arriba y las brasas
+          alrededor. Nada de split izquierda/derecha.
+       ═══════════════════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <!-- Fondo: el video ocupa todo el hero. Short vertical grabado de
+         costado, la rotación se controla en script.js → HERO_VIDEO_ROTATION -->
+    <div class="hero__media" id="heroMedia">
+      <video class="hero__video" id="heroVideo"
+             muted playsinline preload="auto"
+             aria-label="JLB Chef Gaucho event presentation video">
+        <source src="assets/video/presentacion-eventos.mp4" type="video/mp4">
+      </video>
+      <span class="hero__veil" aria-hidden="true"></span>
+    </div>
+
+    <div class="hero__inner">
+      <img class="hero__logo" src="assets/img/logo-main-transparent.png"
+           alt="JLB Chef Gaucho" width="560" height="442" fetchpriority="high">
+
+      <p class="eyebrow eyebrow--center" data-reveal>Argentine Live-Fire Experiences · Miami</p>
+
+      <h1 class="hero__title" data-reveal style="--d:.06s">
+        It all begins<br>
+        <em class="heat-text">with fire.</em>
+      </h1>
+
+      <p class="hero__lead" data-reveal style="--d:.1s">Private Events · Weddings · Live Cooking</p>
+
+      <div class="hero__actions" data-reveal style="--d:.16s">
+        <a class="btn btn--primary btn--lg" href="#" data-wa
+           data-msg="Hi José Luis, I'd like to ask about an event with JLB Chef Gaucho.">
+          <svg class="ico-wa" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.25-.85.84-.85 2.03 0 1.2.87 2.35.99 2.51.12.17 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+          Book Your Fire Experience
+        </a>
+        <a class="btn btn--ghost btn--lg" href="#experience">See the experience</a>
+      </div>
+    </div>
+
+    <p class="hero__corner hero__corner--left">Miami &amp; South Florida</p>
+    <p class="hero__corner hero__corner--right"><span class="script">Fire Begins.</span></p>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       Separador — respiro visual entre el video del hero y la
+       foto del chef, para que el corte de una sección a otra
+       no sea tan directo.
+       ═══════════════════════════════════════════════════════ -->
+  <div class="hero-divider" aria-hidden="true">
+    <span class="flame-rule" data-reveal></span>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════
+       2. EL CHEF — foto a sangre completa + panel superpuesto
+       ═══════════════════════════════════════════════════════ -->
+  <section class="chef" id="chef">
+    <figure class="chef__photo">
+      <img src="assets/img/foto6.jpg" alt="José Luis Bolchini, JLB Chef Gaucho, cooking in front of the open fire" loading="lazy" decoding="async" width="1254" height="1254">
+    </figure>
+
+    <div class="wrap chef__layer">
+      <div class="chef__panel" data-reveal>
+        <p class="eyebrow">The chef</p>
+        <h2 class="chef__title">Argentine chef.<br><em>Miami fire.</em></h2>
+        <p class="chef__text">
+          José Luis Bolchini is an Argentine chef based in Miami, specializing in
+          live-fire cooking and private culinary experiences. Before he lit his
+          first open fire for a client, he spent years working the kitchens at
+          Faena — Miami Beach's landmark luxury hotel — where precision and
+          consistency aren't optional. That discipline is still in every event
+          he runs today: fire, timing and respect for the ingredient define the
+          experience. "JLB Chef" is how the guests started calling him — it stuck.
+        </p>
+        <p class="chef__note">This isn't catering — the fire isn't backstage, it's the show.</p>
+        <p class="chef__sign"><span class="script">Chef Gaucho</span></p>
+        <a class="link-gold" href="https://instagram.com/jlbchef" target="_blank" rel="noopener">
+          Follow the day to day on Instagram <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       3. LA EXPERIENCIA — tres momentos en escalera ascendente
+          (suben como el fuego, no se alternan izq/der)
+       ═══════════════════════════════════════════════════════ -->
+  <section class="exp" id="experience">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="eyebrow" data-reveal>The experience</p>
+        <h2 class="section-title" data-reveal style="--d:.08s">How a night of fire unfolds</h2>
+        <p class="exp__intro" data-reveal style="--d:.12s">
+          Cooking isn't hidden behind a kitchen door — it happens in front of your
+          guests, from the first log to the last plate.
+        </p>
+      </header>
+
+      <div class="moments">
+        <article class="moment" data-reveal>
+          <figure class="moment__media">
+            <img src="assets/img/moment-prep.jpg" alt="Chef tying a whole cut onto the asador cross before it goes over the fire" loading="lazy" decoding="async" width="1100" height="1467">
+            <span class="moment__ember" aria-hidden="true"></span>
+          </figure>
+          <p class="moment__when">Three hours before</p>
+          <h3 class="moment__title">Wood first</h3>
+          <p class="moment__text">
+            No gas, no bagged charcoal. The wood gets lit and then you wait. Three
+            hours of real embers before the first guest walks in.
+          </p>
+        </article>
+
+        <article class="moment" data-reveal style="--d:.1s">
+          <figure class="moment__media">
+            <img src="assets/img/moment-grill.jpg" alt="Grilled chicken lifted straight off the fire, more cuts still cooking below" loading="lazy" decoding="async" width="1100" height="1467">
+            <span class="moment__ember" aria-hidden="true"></span>
+          </figure>
+          <p class="moment__when">During the event</p>
+          <h3 class="moment__title">The grill is the centerpiece</h3>
+          <p class="moment__text">
+            The Álamo 120 Pro comes to life: cross, cage, brazier and griddle. Cuts
+            hanging, vegetables in the smoke, everything turning in plain sight.
+            The fire isn't backstage — it's the show, and guests gather around it
+            on their own.
+          </p>
+        </article>
+
+        <article class="moment" data-reveal style="--d:.2s">
+          <figure class="moment__media">
+            <img src="assets/img/moment-served.jpg" alt="Overhead shot of a grilled asado board with flank steak, chorizo, morcilla, provoleta and fire-roasted pineapple" loading="lazy" decoding="async" width="1100" height="1467">
+            <span class="moment__ember" aria-hidden="true"></span>
+          </figure>
+          <p class="moment__when">At the table</p>
+          <h3 class="moment__title">Served in courses</h3>
+          <p class="moment__text">
+            Provoleta, choripán with chimichurri, flank steak, short ribs, fire-roasted
+            vegetables. It comes out in rounds, hot, the moment it's ready.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       4. MENÚ — Argentine Grill Experience
+       ═══════════════════════════════════════════════════════ -->
+  <section class="menu" id="menu">
+    <div class="wrap">
+      <header class="section-head" style="text-align:center">
+        <p class="eyebrow eyebrow--center" data-reveal>Argentine grill experience</p>
+        <h2 class="section-title" data-reveal style="--d:.08s">What comes off the fire</h2>
+        <p class="menu__lead" data-reveal style="--d:.12s">
+          A selection of Argentine meats and fire-cooked specialties, prepared live
+          over the grill. Menus are customized to the event, the guest count and
+          the occasion — this is the range we build from.
+        </p>
+      </header>
+
+      <!-- Categorías con carrusel horizontal: se elige una arriba y se
+           desliza para ver los platos de esa categoría. Cada categoría es
+           su propia tira con scroll-snap (funciona con swipe táctil solo,
+           las flechas son un extra para desktop). -->
+      <div class="menu-tabs" role="tablist" aria-label="Menu categories" data-reveal style="--d:.14s">
+        <button class="menu-tabs__btn is-active" type="button" role="tab" aria-selected="true" aria-controls="panel-boards" data-menu-cat="boards">Boards &amp; Specials</button>
+        <button class="menu-tabs__btn" type="button" role="tab" aria-selected="false" aria-controls="panel-single" data-menu-cat="single">Served On Their Own</button>
+        <button class="menu-tabs__btn" type="button" role="tab" aria-selected="false" aria-controls="panel-sauces" data-menu-cat="sauces">Sauces</button>
+      </div>
+
+      <div class="menu-carousel" data-reveal style="--d:.2s">
+        <button class="menu-carousel__nav menu-carousel__nav--prev" type="button" aria-label="Previous dish">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4l-8 8 8 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+
+        <!-- Panel: Tablas -->
+        <div class="menu-panel is-active" id="panel-boards" data-panel="boards" role="tabpanel">
+          <ul class="menu-slides">
+            <li class="menu-slide">
+              <img class="menu-slide__img" src="assets/img/board-mixed-grill.jpg" alt="Traditional mixed grill board with flank steak, chorizo, morcilla, pork loin and grilled pineapple" loading="lazy" decoding="async" width="576" height="432">
+              <h4 class="menu-slide__name">Traditional Mixed Grill Board</h4>
+              <p class="menu-slide__desc">Flank steak or picanha, grilled provolone, chorizo, morcilla, beef sweetbreads, grilled pineapple and pork loin.</p>
+            </li>
+            <li class="menu-slide">
+              <img class="menu-slide__img" src="assets/img/board-pizza-matambrito.jpg" alt="Pizza-style grilled pork matambrito topped with pomodoro sauce, melted mozzarella and fresh basil" loading="lazy" decoding="async" width="900" height="675">
+              <h4 class="menu-slide__name">Pizza-Style Pork Matambrito</h4>
+              <p class="menu-slide__desc">Grilled pork matambrito topped with homemade pomodoro sauce, melted mozzarella and fresh basil, finished over the embers for a smoky, gratinated crust.</p>
+            </li>
+            <li class="menu-slide">
+              <img class="menu-slide__img" src="assets/img/board-combo.jpg" alt="Traditional Argentine mixed grill board with vacío, chorizo, morcilla, sweetbreads and provoleta, served alongside pizza-style pork matambrito, chimichurri and salsa criolla" loading="lazy" decoding="async" width="900" height="675">
+              <h4 class="menu-slide__name">Mixed Grill Board + Pizza-Style Matambrito</h4>
+              <p class="menu-slide__desc">Grilled vacío, chorizo, morcilla, sweetbreads and provoleta, with chimichurri and salsa criolla. Served with pork matambrito grilled over open fire, topped with homemade pomodoro sauce, melted mozzarella and fresh basil, finished over the embers.</p>
+            </li>
+          </ul>
+          <p class="menu-panel__note">Every board is built to order — this is the base we start from.</p>
+        </div>
+
+        <!-- Panel: Servido por separado -->
+        <div class="menu-panel" id="panel-single" data-panel="single" role="tabpanel" hidden>
+          <ul class="menu-slides">
+            <li class="menu-slide">
+              <img class="menu-slide__img" src="assets/img/side-picana.jpg" alt="Sliced fire-grilled picanha finished with coarse sea salt" loading="lazy" decoding="async" width="900" height="675">
+              <h4 class="menu-slide__name">Side of Grilled Picanha</h4>
+              <p class="menu-slide__desc">Tender, fire-grilled top sirloin cap, sliced and finished with coarse sea salt.</p>
+            </li>
+            <li class="menu-slide">
+              <img class="menu-slide__img" src="assets/img/side-sweetbreads.jpg" alt="Argentine grilled beef sweetbreads topped with pickled red cabbage, served with charred lemon" loading="lazy" decoding="async" width="900" height="675">
+              <h4 class="menu-slide__name">Argentine Grilled Sweetbreads</h4>
+              <p class="menu-slide__desc">Fire-grilled beef sweetbreads, caramelized and crisp outside, tender inside, topped with pickled red cabbage and served with charred lemon.</p>
+            </li>
+            <li class="menu-slide">
+              <img class="menu-slide__img" src="assets/img/veg-sides.jpg" alt="Grilled vegetable sides: tomato, sweet potato, corn and roasted bell pepper" loading="lazy" decoding="async" width="640" height="640">
+              <h4 class="menu-slide__name">Grilled Vegetable Sides</h4>
+              <p class="menu-slide__desc">Tomato, sweet potato, corn and roasted bell pepper, finished with garlic and butter.</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Panel: Salsas -->
+        <div class="menu-panel" id="panel-sauces" data-panel="sauces" role="tabpanel" hidden>
+          <ul class="menu-slides">
+            <li class="menu-slide">
+              <img class="menu-slide__img" src="assets/img/sauce-chimichurri.jpg" alt="Traditional Argentine chimichurri with parsley, garlic and crushed red pepper in a small wooden bowl" loading="lazy" decoding="async" width="640" height="640">
+              <h4 class="menu-slide__name">Traditional Argentine Chimichurri</h4>
+              <p class="menu-slide__desc">Fresh parsley, garlic and crushed red pepper, dressed with neutral oil and red wine vinegar.</p>
+            </li>
+            <li class="menu-slide">
+              <img class="menu-slide__img" src="assets/img/sauce-criolla.jpg" alt="Argentine salsa criolla with bell peppers, onion and ember-roasted mandarin in a small wooden bowl" loading="lazy" decoding="async" width="640" height="640">
+              <h4 class="menu-slide__name">Argentine Salsa Criolla</h4>
+              <p class="menu-slide__desc">Red, green and yellow bell peppers, white onion and ember-roasted mandarin, dressed with vinegar, extra-virgin olive oil, sea salt and black pepper.</p>
+            </li>
+          </ul>
+          <p class="menu-panel__note">Always on the table — on the boards and on their own.</p>
+        </div>
+
+        <button class="menu-carousel__nav menu-carousel__nav--next" type="button" aria-label="Next dish">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4l8 8-8 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+
+      <p class="menu__note" data-reveal style="--d:.2s">
+        Every fire is different. Every menu should be too — built around your
+        venue, headcount and occasion.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       5. EVENTOS — filas a lo ancho, no cards
+       ═══════════════════════════════════════════════════════ -->
+  <section class="services" id="services">
+    <div class="wrap">
+      <header class="section-head section-head--row">
+        <div>
+          <p class="eyebrow" data-reveal>What people book</p>
+          <h2 class="section-title" data-reveal style="--d:.08s">Three ways to light the fire</h2>
+        </div>
+        <p class="services__note" data-reveal style="--d:.14s">Every booking is quoted after a quick conversation.</p>
+      </header>
+
+      <ul class="rows">
+        <li data-reveal>
+          <a class="row" href="#" data-wa
+             data-msg="Hi José Luis, I'd like to ask about a private event with JLB Chef Gaucho.">
+            <span class="row__title">Private events</span>
+            <span class="row__text">Birthdays, anniversaries, dinners at home. From 10 to 100 guests, in your backyard, terrace or pool deck.</span>
+            <span class="row__go">Check availability <b aria-hidden="true">→</b></span>
+          </a>
+        </li>
+        <li data-reveal style="--d:.08s">
+          <a class="row" href="#" data-wa
+             data-msg="Hi José Luis, I'd like to ask about a corporate event with JLB Chef Gaucho.">
+            <span class="row__title">Corporate</span>
+            <span class="row__text">Brand activations, team dinners, client entertaining. Setup, service and cleanup of the working area included.</span>
+            <span class="row__go">Request a proposal <b aria-hidden="true">→</b></span>
+          </a>
+        </li>
+        <li data-reveal style="--d:.16s">
+          <a class="row" href="#" data-wa
+             data-msg="Hi José Luis, I'd like to ask about a custom event with JLB Chef Gaucho.">
+            <span class="row__title">Custom</span>
+            <span class="row__text">Weddings, tastings, set menus. Menu and setup built around the venue, the headcount and the time we have.</span>
+            <span class="row__go">Build the menu <b aria-hidden="true">→</b></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       6. CTA FINAL — el fuego sube desde el borde inferior
+       ═══════════════════════════════════════════════════════ -->
+  <section class="final" id="book">
+    <div class="wrap wrap--narrow final__inner">
+      <p class="eyebrow eyebrow--center" data-reveal>Now booking</p>
+
+      <h2 class="final__title" data-reveal style="--d:.08s">
+        Book your<br><em class="heat-text">fire experience.</em>
+      </h2>
+
+      <span class="flame-rule" data-reveal style="--d:.14s" aria-hidden="true"></span>
+
+      <form class="booker" id="booker" novalidate data-reveal style="--d:.2s">
+        <fieldset class="booker__set" id="setType">
+          <legend class="booker__label" id="lblType">What kind of event?</legend>
+          <div class="chips" role="radiogroup" aria-labelledby="lblType">
+            <button type="button" class="chip" role="radio" aria-checked="false" data-group="tipo" data-value="private event">Private</button>
+            <button type="button" class="chip" role="radio" aria-checked="false" data-group="tipo" data-value="corporate event">Corporate</button>
+            <button type="button" class="chip" role="radio" aria-checked="false" data-group="tipo" data-value="custom event">Custom</button>
+          </div>
+        </fieldset>
+
+        <fieldset class="booker__set" id="setGuests">
+          <legend class="booker__label" id="lblGuests">How many guests? <span class="booker__opt">optional</span></legend>
+          <div class="chips" role="radiogroup" aria-labelledby="lblGuests">
+            <button type="button" class="chip" role="radio" aria-checked="false" data-group="invitados" data-value="up to 25">Up to 25</button>
+            <button type="button" class="chip" role="radio" aria-checked="false" data-group="invitados" data-value="25 to 50">25 – 50</button>
+            <button type="button" class="chip" role="radio" aria-checked="false" data-group="invitados" data-value="50 to 100">50 – 100</button>
+            <button type="button" class="chip" role="radio" aria-checked="false" data-group="invitados" data-value="more than 100">100+</button>
+          </div>
+
+          <div class="exact">
+            <span class="exact__or">or the exact number</span>
+            <input class="exact__input" type="number" id="guestsExact" name="guestsExact"
+                   min="1" max="999" inputmode="numeric" placeholder="e.g. 42" aria-label="Exact number of guests">
+          </div>
+        </fieldset>
+
+        <div class="preview" id="preview">
+          <div class="preview__head">
+            <span class="preview__label">Message you'll send</span>
+            <button type="button" class="preview__reset" id="previewReset" hidden>Rewrite from my answers</button>
+          </div>
+          <textarea class="preview__text" id="previewText" rows="3"
+            aria-label="WhatsApp message — you can edit it directly">Hi José Luis, I'd like to ask about an event with JLB Chef Gaucho.</textarea>
+          <span class="preview__hint">Feel free to edit this directly — it's exactly what gets sent.</span>
+        </div>
+
+        <p class="booker__error" id="bookerError" role="alert" hidden>
+          Pick an event type to build your message.
+        </p>
+
+        <button class="btn btn--primary btn--lg" type="submit" id="bookerSubmit">
+          <svg class="ico-wa" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.25-.85.84-.85 2.03 0 1.2.87 2.35.99 2.51.12.17 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+          <span class="btn__text">Start planning your event</span>
+        </button>
+
+        <p class="booker__note">You write, José Luis answers. No forms, no bots.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ═══════════════════════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════════════════════ -->
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <div class="foot__brand">
+      <img src="assets/img/logo-main-transparent.png" alt="JLB Chef Gaucho" width="560" height="442" loading="lazy">
+      <p class="script foot__tag">Fire Begins.</p>
+      <p class="foot__tagline">It All Begins with Fire.</p>
+    </div>
+
+    <div class="foot__cols">
+      <div class="foot__col">
+        <h3>Contact</h3>
+        <a class="foot__row" href="#" data-wa data-msg="Hi José Luis, I'd like to ask about an event with JLB Chef Gaucho.">
+          <svg class="foot__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.25-.85.84-.85 2.03 0 1.2.87 2.35.99 2.51.12.17 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+          <span>+1 (786) 428-8673</span>
+        </a>
+        <a class="foot__row" href="https://instagram.com/jlbchef" target="_blank" rel="noopener">
+          <svg class="foot__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153.5.5.9 1.03 1.153 1.772.247.637.415 1.363.465 2.428.05 1.066.06 1.405.06 4.122s-.01 3.056-.06 4.122c-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772c-.5.5-1.03.9-1.772 1.153-.637.247-1.363.415-2.428.465-1.066.05-1.405.06-4.122.06s-3.056-.01-4.122-.06c-1.065-.05-1.79-.218-2.428-.465a4.883 4.883 0 0 1-1.772-1.153 4.883 4.883 0 0 1-1.153-1.772c-.247-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12s.01-3.056.06-4.122c.05-1.065.218-1.79.465-2.428a4.883 4.883 0 0 1 1.153-1.772A4.883 4.883 0 0 1 5.45 2.525c.637-.248 1.363-.416 2.428-.465C8.944 2.013 9.283 2 12 2Zm0 1.802c-2.67 0-2.987.01-4.04.059-.976.045-1.505.207-1.858.344-.466.181-.8.398-1.15.748-.35.35-.567.684-.748 1.15-.137.353-.3.882-.344 1.857-.05 1.054-.06 1.37-.06 4.04s.01 2.987.06 4.04c.045.976.207 1.505.344 1.858.181.466.398.8.748 1.15.35.35.684.567 1.15.748.353.137.882.3 1.857.344 1.054.05 1.37.06 4.04.06s2.987-.01 4.04-.06c.976-.045 1.505-.207 1.858-.344.466-.181.8-.398 1.15-.748.35-.35.567-.684.748-1.15.137-.353.3-.882.344-1.857.05-1.054.06-1.37.06-4.04s-.01-2.987-.06-4.04c-.045-.976-.207-1.505-.344-1.858a3.09 3.09 0 0 0-.748-1.15 3.09 3.09 0 0 0-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.054-.05-1.37-.06-4.04-.06Zm0 4.595a5.603 5.603 0 1 1 0 11.206A5.603 5.603 0 0 1 12 8.397Zm0 1.802a3.8 3.8 0 1 0 0 7.6 3.8 3.8 0 0 0 0-7.6Zm6.406-2.006a1.309 1.309 0 1 1-2.618 0 1.309 1.309 0 0 1 2.618 0Z"/></svg>
+          <span>@jlbchef</span>
+        </a>
+      </div>
+      <div class="foot__col">
+        <h3>Area</h3>
+        <p class="foot__row">
+          <svg class="foot__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C7.86 2 4.5 5.36 4.5 9.5c0 5.25 6.24 11.6 6.51 11.87a1.4 1.4 0 0 0 1.98 0c.27-.27 6.51-6.62 6.51-11.87C19.5 5.36 16.14 2 12 2Zm0 10.25a2.75 2.75 0 1 1 0-5.5 2.75 2.75 0 0 1 0 5.5Z"/></svg>
+          <span>Miami &amp; South Florida</span>
+        </p>
+        <p class="foot__row">
+          <svg class="foot__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm7.94 9h-3.05a15.7 15.7 0 0 0-1.14-5.36A8.03 8.03 0 0 1 19.94 11ZM12 4.06c.9 1.2 1.98 3.28 2.24 6.94H9.76c.26-3.66 1.34-5.74 2.24-6.94ZM8.25 5.64A15.7 15.7 0 0 0 7.11 11H4.06a8.03 8.03 0 0 1 4.19-5.36ZM4.06 13h3.05c.15 2.02.55 3.86 1.14 5.36A8.03 8.03 0 0 1 4.06 13Zm7.94 6.94c-.9-1.2-1.98-3.28-2.24-6.94h4.48c-.26 3.66-1.34 5.74-2.24 6.94Zm3.75-1.58c.59-1.5.99-3.34 1.14-5.36h3.05a8.03 8.03 0 0 1-4.19 5.36Z"/></svg>
+          <span>Ask about events outside the area</span>
+        </p>
+      </div>
+      <div class="foot__col">
+        <h3>Service</h3>
+        <p class="foot__row"><span class="foot__icon foot__icon--flame" aria-hidden="true"></span><span>Private events</span></p>
+        <p class="foot__row"><span class="foot__icon foot__icon--flame" aria-hidden="true"></span><span>Corporate</span></p>
+        <p class="foot__row"><span class="foot__icon foot__icon--flame" aria-hidden="true"></span><span>Custom menus</span></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap foot__bottom">
+    <p>© <span id="year">2026</span> JLB Chef Gaucho · Live fire private events · Miami, FL</p>
+  </div>
+</footer>
+
+<a class="wa-float" href="#" data-wa
+   data-msg="Hi José Luis, I'd like to ask about an event with JLB Chef Gaucho."
+   aria-label="Message on WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.25-.85.84-.85 2.03 0 1.2.87 2.35.99 2.51.12.17 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+  <span class="wa-float__tip">Book your event</span>
+</a>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FoodService",
+  "name": "JLB Chef Gaucho",
+  "description": "Argentine live-fire experiences by Chef José Luis Bolchini: private events, weddings and corporate celebrations built around fire and Argentine tradition in Miami.",
+  "image": "https://jlbchefgaucho.com/assets/img/og-image.jpg",
+  "telephone": "+17864288673",
+  "priceRange": "$$$",
+  "servesCuisine": ["Argentine", "Asado", "Live Fire"],
+  "areaServed": { "@type": "City", "name": "Miami", "addressRegion": "FL", "addressCountry": "US" },
+  "sameAs": ["https://instagram.com/jlbchef"]
+}
+</script>
+
+<script src="script.js" defer></script>
+</body>
+</html>

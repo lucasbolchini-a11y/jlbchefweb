@@ -1,0 +1,13 @@
+Subir acá el archivo del video del hero con este nombre exacto:
+
+    presentacion-eventos.mp4
+
+El video es un short vertical grabado de costado. La rotación se controla
+desde script.js, en la constante HERO_VIDEO_ROTATION (línea ~28):
+
+    -90  gira a la izquierda  (valor por defecto)
+     90  gira a la derecha    (usar si se ve al revés)
+      0  sin rotar            (si el video ya está en horizontal)
+
+Mientras el archivo no esté subido, en el hero se muestra la foto de
+respaldo (assets/img/foto4.jpg) sin romper nada.
