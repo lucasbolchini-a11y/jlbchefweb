@@ -159,6 +159,8 @@ textarea{font:inherit;color:inherit;}
 .link-gold span{display:inline-block;transition:transform .3s var(--ease);}
 .link-gold:hover{color:var(--fire);border-color:var(--fire-soft);}
 .link-gold:hover span{transform:translateX(5px);}
+.link-gold--icon{display:inline-flex;align-items:center;gap:8px;}
+.link-gold__icon{width:14px;height:14px;flex:none;fill:currentColor;}
 
 [data-reveal]{
   opacity:0;transform:translateY(22px);
